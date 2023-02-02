@@ -1,0 +1,41 @@
+.plans__container {
+  width: 98vw;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
+.plan {
+    display: grid;
+    gap: .5rem;
+}
+.plan small {
+  display: block;
+}
+.plan__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+.plan h2,
+.plan .disabled,
+.plan small {
+  color: var(--near-black);
+}
+.btn__plan {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: .5rem auto;
+}
+
+
+/* ***** SMALL SCREEN */
+@media screen and (max-width: 37.5rem) {
+    .plans__container {
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+}

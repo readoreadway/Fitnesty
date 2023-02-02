@@ -1,0 +1,74 @@
+.amenities {
+  padding: 1rem 2rem;
+  height: 70vh;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  background: #00000040 url("../../images/shoulder-press.png");
+  background-size: cover;
+}
+.amenities h2 {
+    background: var(--color-black);
+    text-align: center;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+}
+.amenities h2 span {
+  color: var(--bright-yellow);
+}
+.amenities__container small {
+  display: inline-block;
+  width: 35vw;
+  margin: 2rem 0;
+}
+.amenity__icon {
+  font-size: 0.9rem;
+}
+.amenties__contents {
+  display: flex;
+  gap: 2rem;
+}
+.amenities__content {
+  display: grid;
+  gap: 1rem;
+}
+.amenities__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.amenities__content .info {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.amenities__container small {
+  color: var(--bright-yellow);
+}
+
+/* ***** SMALL SCREEN <=600PX */
+@media screen and (max-width: 37.5rem) {
+  .amenities {
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    padding: 1rem 0;
+    text-align: center;
+    gap: .5rem;
+  }
+  .amenities__container {
+    width: 100vw;
+  }
+  .amenities h2 {
+    padding: 0;
+    margin-inline: auto;
+  }
+  .amenities__container small {
+    width: 85vw;
+    margin: 1rem auto;
+  }
+  .amenties__contents {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}

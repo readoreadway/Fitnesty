@@ -1,0 +1,15 @@
+.card {
+    padding: 1.5rem 1rem;
+    background: var( --gray-md);
+    box-shadow: 3px 3px 3px rgba(black, .3);
+    border-radius: 0 2rem;
+    border: 1px solid transparent;
+    width: fit-content;
+    text-align: center;
+    color: var(--color-black);
+}
+.card:hover {
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+}

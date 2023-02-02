@@ -1,0 +1,121 @@
+.nav__container {
+  width: 100vw;
+  background: var(--Medical-Blueblack);
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  height: 5rem;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  width: 10rem;
+}
+.nav__links {
+  display: flex;
+  justify-content: space-around;
+  gap: 3.5rem;
+}
+.nav__links a {
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.nav__links a:hover {
+  color: var(--color-yellow);
+  letter-spacing: 1px;
+}
+.active-nav {
+  position: relative;
+}
+.active-nav::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: calc(50% - 0.5rem);
+  width: 1.1rem;
+  height: 1.1rem;
+  background: var(--color-yellow);
+  transform: rotate(45deg);
+  top: 1.4rem;
+}
+.nav-toggler {
+  display: none;
+}
+
+/* ******MEDIA QUERY (<=1024PX)***** */
+
+@media screen and (max-width: 64rem) {
+  .nav__container {
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .nav-toggler {
+    display: inline-block;
+    background: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  .nav-toggler svg {
+    font-size: 1.8rem;
+    color: var(--gray-light);
+  }
+  .nav__links {
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    right: .5rem;
+    z-index: 10;
+    top: 100%;
+    perspective: 300px;
+  }
+  .nav__links li {
+    box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.3);
+    height: 4rem;
+    width: 100%;
+    background: var(--color-gold);
+    animation: navAnimae 600ms ease forwards;
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  .nav__links a {
+    background: var(--Medical-Blue-2);
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem 1rem 3rem;
+  }
+  .active-nav::after,
+  .active-nav {
+    display: none;
+  }
+  .close__nav {
+    display: none;
+  }
+  .display__nav {
+    display: flex;
+  }
+  .nav__links li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  .nav__links li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  .nav__links li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+  .nav__links li:nth-child(5) {
+    animation-delay: 800ms;
+  }
+
+  @keyframes navAnimae {
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+  }
+}

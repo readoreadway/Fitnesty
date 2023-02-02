@@ -1,0 +1,51 @@
+.starter__section {
+  background: url("../../images/Gym-BG.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  position: relative;
+}
+.starter__container {
+  display: grid;
+  place-items: center;
+}
+.starter__content {
+  display: grid;
+  gap: 1rem;
+  width: 50vw;
+  margin-inline: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.starter__content h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--bright-yellow);
+  text-shadow: 2px 2px 2px var(--color-bg-pry);
+}
+.starter__content p {
+  color: var(--color-bg-pry);
+  text-shadow: 1px 1px 1px var(--color-white);
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #fff5;
+}
+
+/* ***** MEDIUM SCREEN SIZE <=600px */
+@media screen and (max-width: 37.5rem) {
+  .starter__section {
+    height: 60vh;
+  }
+  .starter__container {
+    width: var(--container-width-sm);
+  }
+  .starter__content {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+  .starter__content h2 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,74 @@
+.main__header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/GymDumbell1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.mainheader__container--content h1,
+.mainheader__container--content h4,
+.mainheader__container--content p {
+  color: var(--bright-yellow);
+  text-shadow: 1px 1px 0.8px var(--Medical-Blueblack);
+}
+.mainheader__container--content h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px var(--Medical-Blueblack);
+  width: 40vw;
+  letter-spacing: 1px;
+  margin-top: 2rem 0;
+}
+.mainheader__container--content h4 {
+  margin: 1.5rem 0;
+}
+.mainheader__btn {
+  margin: 1rem 0;
+}
+.mainheader__container--content p {
+  width: 35vw;
+  letter-spacing: 1px;
+}
+
+/* ******MEDIA QUERY (<=1024PX)***** */
+@media screen and (max-width: 64rem) {
+  .main__header {
+    height: 70vh;
+  }
+  .mainheader__container--content {
+    width: 45vw;
+  }
+  .mainheader__container--content h1 {
+    font-size: 2rem;
+    width: 45vw;
+  }
+  .mainheader__container--content p {
+    width: 43vw;
+  }
+}
+
+/* ******MEDIA QUERY (<=600px)*****  */
+@media screen and (max-width: 37.5rem) {
+  .main__header {
+    height: 90vh;
+  }
+  .mainheader__container {
+    width: 100vw;
+  }
+  .mainheader__container--content {
+    width: 90vw;
+    margin-inline: auto;
+  }
+  .main__header h1,
+  .main__header p {
+    width: 90%;
+  }
+  .main__header h1 {
+    font-size: 1.5rem;
+  }
+}

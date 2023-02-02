@@ -1,0 +1,108 @@
+.contact {
+  height: 75vh;
+  position: relative;
+}
+.contact__bg {
+  height: 100%;
+  background: url(../../images/rope-swinging.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(70%);
+  opacity: 35%;
+}
+.contact__container {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--color-white);
+}
+.contact__heading {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: fit-content;
+}
+.contact__heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.contact__heading span {
+  color: var(--bright-yellow);
+}
+.contact__heading small {
+  width: 30vw;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+.contact__location {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 60vw;
+}
+.contact__address,
+.contact__nummail {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__icon {
+  font-size: 2.5rem;
+  color: var(--bright-yellow);
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: left;
+}
+
+/* *****MEDIUM SCREEN <=1024PX */
+@media screen and (max-width: 64rem) {
+  .contact {
+    height: 50vh;
+  }
+  .contact__address,
+  .contact__nummail {
+    gap: 1rem;
+  }
+  .contact__heading small {
+    width: 45vw;
+  }
+  .contact__location {
+    width: fit-content;
+  }
+}
+
+/* ***** SMALL SCREEN <=600PX */
+@media screen and (max-width: 37.5rem) {
+  
+  .contact__container {
+    gap: 1.5rem;
+    width: 98vw;
+  }
+  .contact__heading {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+  .contact__heading small {
+    width: 90vw;
+  }
+  .contact__location {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact__icon {
+    font-size: 2rem;
+  }
+}

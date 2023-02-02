@@ -1,0 +1,28 @@
+.contact {
+    height: 45vh;
+    margin-top: 0;
+    display: grid;
+    place-items: center;
+}
+.contact__icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.contact__icons a {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid transparent;
+    color: var(--color-white);
+    background: var(--medical-Blue-1);
+    backface-visibility: hidden;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+}
+.contact__icons a:hover {
+    background: transparent;
+    border: 2px solid var(--gray-md);
+}
+

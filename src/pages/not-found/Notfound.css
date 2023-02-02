@@ -1,0 +1,27 @@
+.notfound {
+    height: 85.5vh;
+    display: grid;
+    place-items: center;
+}
+.notfound__container {
+    width: 98vw;
+    margin-inline: auto;
+    text-align: center;
+}
+.home__btn--container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    place-items: center;
+}
+.notfound__container h2 {
+    font-size: 5rem;
+}
+
+/* ***** MEDIUM SCREEN */
+@media screen and (max-width: 64rem) {
+    .notfound {
+        height: 95.5vh;
+    }
+}

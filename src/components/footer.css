@@ -1,0 +1,14 @@
+.footer {
+  background: var(--Medical-Blueblack);
+  text-align: center;
+  color: var( --gray-light);
+}
+.footer p {
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 64rem) {
+  .footer p {
+    padding: 1rem 0;
+  }
+}

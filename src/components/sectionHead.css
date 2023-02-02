@@ -1,0 +1,17 @@
+.section__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.section__head span {
+    font-size: 2rem;
+    background-color: var(--medical-Blue-1);
+    color: var(--color-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem .5rem;
+    border-radius: .45rem;
+    box-shadow: 2px 2px 2px rgba(var(--Medical-Blueblack), .3);
+}
